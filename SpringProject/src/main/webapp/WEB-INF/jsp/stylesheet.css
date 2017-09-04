@@ -1,0 +1,37 @@
+body {
+	font-family: sans-serif;
+	font-size: 11pt;
+	color: black;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+table {
+	counter-reset: tableCount;
+	width: 70%;
+}
+
+.counterCell:before {
+	content: counter(tableCount);
+	counter-increment: tableCount;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	opacity: 0.95;
+}
+
+th, td {
+	padding: 10px;
+	text-allign: center;
+}
+
+th {
+	color: white;
+	background-color: #a70000;
+}
+.btn{
+background-color: green;
+color: yellow;
+}
